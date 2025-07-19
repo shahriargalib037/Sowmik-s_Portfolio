@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(99, 94, 94, 0.496);
+    color: black;   
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+nav .logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: double;
+    font-size: 0.8cm;
+    color: antiquewhite;
+}
+.navi{
+    background-color: black;
+}
+.navilist{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    text-align: right;
+    align-items: end;
+    list-style: none;
+    font-size: .5cm;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aquamarine;
+}
+nav ul li a:hover{
+    color: burlywood;
+}
+section{
+    padding: 20rem;
+    text-align: center;
+}
+#home{
+    padding: 17rem 9rem 13rem 9rem;
+}
+.Welcome{
+    padding: 18px;
+}
+.myimage{
+    height: auto;
+    width: 20%;
+    float: right;
+    clip-path: circle();
+    justify-content: right;
+    align-items: right;
+    margin: 0;
+    opacity: 0;
+    transform: scale(.7);
+    animation: fadeZoom 1s ease-out forwards;
+    animation-delay: .2s;
+}
+@keyframes fadeZoom{
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+h1{   
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+#about{
+    padding: 16rem 9rem 13rem 9rem;
+}
+
+.myname{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.myself{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sust{
+    text-decoration: none;
+    color: rgb(3, 127, 94);
+}
+.sust:hover{
+    color: black;
+}
+.icon{
+    width: 100px;
+    height: auto;
+    transition: width 1s;
+}
+.icon:hover{
+    width: 110px;
+}
+#skills{
+    padding: 13rem 9rem 13rem 9rem;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: space-between;
+    grid-row-gap: 50px;
+    
+}
+#projects{
+    padding: 16rem 19rem 15rem 19rem;
+}
+.projects{
+    
+    display: grid;
+    grid-template-columns: 100px 100px  100px;
+    justify-content: space-between;
+}
+.mycontacts{
+    color: black;
+    padding: 15rem 21rem 10rem 21rem;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    
+    justify-content: space-between;
+    grid-row-gap: 80px;
+}
+@media screen and (max-width:900px) {
+    .navilist{
+        display: flex;
+        gap: 5px;
+    }
+    nav .logo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: double;
+        font-size: 0.5cm;
+        color: antiquewhite;
+    }
+    section{
+        padding: 0;
+        text-align: center;
+    }
+    #home{
+        padding: 17rem 1rem 13rem 1rem;
+    }
+    .Welcome{
+        padding: 1px;
+    }
+    
+    
+    h1{   
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    }
+    #about{
+        padding: 16rem 1rem 13rem 1rem;
+    }
+    #skills{
+        padding: 13rem 1rem 13rem 1rem;
+    }
+    #projects{
+        padding: 16rem 1rem 15rem 1rem;
+    }
+    .mycontacts{
+    color: black;
+    padding: 15rem 1rem 10rem 1rem;
+    }
+    footer{
+    background-color: black;
+    padding: 5%;
+}
+    
+}
+@media only screen and(orientation: portrait ) {
+    .pppp{
+        display: grid;
+        grid-template-rows: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .myimage{
+        position: absolute;
+        top: 20%;
+        right: 39%;
+        width: 40px;
+    }
+    footer{
+    background-color: black;
+    padding: 50%;
+    }
+}
+@media screen and (max-width: 566px) {
+    .pppp{
+        display: grid;
+        grid-template-rows: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .myimage{
+        position: absolute;
+        top: 20%;
+        right: 29%;
+        width: 40%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+} 
+
+footer{
+    background-color: black;
+    padding: 1%;
+}
